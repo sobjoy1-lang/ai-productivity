@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="用公开数据观察人工智能如何进入产业、改变生产方式，并成为新质生产力。">
+  <title>智能跃迁｜AI 与新质生产力</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="page-glow glow-one"></div>
+  <div class="page-glow glow-two"></div>
+  <div class="ambient-grid" aria-hidden="true"></div>
+  <aside class="story-rail" aria-label="阅读进度">
+    <span class="rail-label">SCROLL TO EXPLORE</span>
+    <div class="rail-line"><i></i></div>
+    <div class="rail-steps">
+      <a href="#top" data-rail="top"><b>00</b><span>入口</span></a>
+      <a href="#foundation" data-rail="foundation"><b>01</b><span>供给</span></a>
+      <a href="#diffusion" data-rail="diffusion"><b>02</b><span>渗透</span></a>
+      <a href="#outcomes" data-rail="outcomes"><b>03</b><span>产出</span></a>
+      <a href="#simulator" data-rail="simulator"><b>04</b><span>模拟</span></a>
+    </div>
+  </aside>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="智能跃迁首页">
+      <span class="brand-mark">AI</span>
+      <span class="brand-copy"><strong>智能跃迁</strong><small>AI × 新质生产力</small></span>
+    </a>
+    <nav class="main-nav" aria-label="页面导航">
+      <a href="#foundation">供给</a>
+      <a href="#diffusion">渗透</a>
+      <a href="#outcomes">产出</a>
+      <a href="#simulator">模拟</a>
+    </nav>
+    <span class="data-status"><i></i> 2024 数据基线</span>
+  </header>
+
+  <main>
+    <section class="hero reveal-section" id="top" data-section="top">
+      <div class="hero-copy">
+        <p class="eyebrow">VISUAL ESSAY / INDUSTRIAL AI</p>
+        <h1>当 AI<br><em>重写生产链</em></h1>
+        <p class="hero-lead">人工智能的价值，正在从“模型参数”<span class="mobile-break"><br></span>转向真实的产业流程：研发更快、<span class="mobile-break"><br></span>制造更稳、服务更聪明。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#foundation">沿着数据看下去 <span>↓</span></a>
+          <a class="text-link" href="#sources">查看数据来源 <span>↗</span></a>
+        </div>
+        <div class="hero-note"><span class="pulse-dot"></span><span>中国数据为主线，全球指标作参照</span></div>
+      </div>
+      <div class="hero-visual blueprint-stage" aria-label="AI 生产链数据蓝图">
+        <canvas id="heroCanvas" aria-hidden="true"></canvas>
+        <div class="blueprint-meta"><span>PLATE 04 / INDUSTRIAL AI</span><b>DATA MAP · 2024</b></div>
+        <div class="blueprint-coordinates"><span>X 04.18</span><span>Y 31.23</span><span>REV. 2.0</span></div>
+        <svg class="blueprint-lines" viewBox="0 0 760 500" preserveAspectRatio="none" aria-hidden="true">
+          <path class="blueprint-guide" d="M38 255 H722"></path>
+          <path class="blueprint-main-line" d="M72 301 C 162 301, 160 165, 260 165 S 370 330, 462 330 S 560 210, 688 210"></path>
+          <path class="blueprint-branch" d="M260 165 V90 M462 330 V424"></path>
+          <path class="blueprint-branch" d="M462 330 C 535 330, 535 110, 634 110"></path>
+          <circle class="blueprint-port" cx="72" cy="301" r="6"></circle><circle class="blueprint-port" cx="260" cy="165" r="6"></circle><circle class="blueprint-port" cx="462" cy="330" r="6"></circle><circle class="blueprint-port" cx="688" cy="210" r="6"></circle>
+          <path class="blueprint-arrow" d="M155 301 l-12 -7 m12 7 l-12 7 M355 252 l-12 -7 m12 7 l-12 7 M575 267 l-12 -7 m12 7 l-12 7"></path>
+        </svg>
+        <div class="station station-input"><span class="station-id">01 / INPUT</span><strong>供给层</strong><small>算力 · 数据 · 模型</small><b>36,326.8 <i>亿元 R&amp;D</i></b></div>
+        <div class="station station-model"><span class="station-id">02 / LEARN</span><strong>学习层</strong><small>模型进入组织流程</small><b>2.3 <i>亿用户</i></b></div>
+        <div class="station station-scene"><span class="station-id">03 / APPLY</span><strong>场景层</strong><small>制造 · 服务 · 研发</small><b>78 <i>%组织采用</i></b></div>
+        <div class="station station-output"><span class="station-id">04 / OUTPUT</span><strong>产出层</strong><small>效率被重新计量</small><b>+14 <i>%现场提升</i></b></div>
+        <div class="blueprint-callout callout-a"><span>FLOW / A</span><b>供给进入场景</b></div>
+        <div class="blueprint-callout callout-b"><span>FIELD STUDY / NBER</span><b>效率开始显形</b></div>
+        <div class="visual-caption">PRODUCTION CHAIN // LIVE SPECIFICATION</div>
+      </div>
+    </section>
+
+    <section class="signal-strip" aria-label="关键结论">
+      <div><span class="signal-index">01</span><strong>供给</strong><small>算力、数据、模型</small></div><div class="signal-arrow">→</div>
+      <div><span class="signal-index">02</span><strong>渗透</strong><small>用户、企业、行业</small></div><div class="signal-arrow">→</div>
+      <div><span class="signal-index">03</span><strong>产出</strong><small>效率、规模、质量</small></div>
+    </section>
+
+    <section class="section reveal-section" id="foundation" data-section="foundation">
+      <div class="section-head"><div><p class="section-kicker">01 / SUPPLY</p><h2>先看 AI 的底座</h2></div><p class="section-intro">数字产业、研发投入和基础设施共同构成 AI 进入实体经济的供给侧。</p></div>
+      <div class="metric-grid">
+        <article class="metric-card metric-card-accent"><span class="metric-label">数字经济核心产业</span><strong>140,891<span>亿元</span></strong><p>2024 年增加值，占 GDP 10.5%</p><a href="https://www.stats.gov.cn/sj/zxfb/202512/t20251230_1962177.html" target="_blank" rel="noopener">国家统计局 ↗</a></article>
+        <article class="metric-card"><span class="metric-label">全国 R&D 经费</span><strong>36,326.8<span>亿元</span></strong><p>2024 年投入强度 2.69%</p><a href="https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202509/t20250929_1961429.html" target="_blank" rel="noopener">统计公报 ↗</a></article>
+        <article class="metric-card"><span class="metric-label">数字产业业务收入</span><strong>35<span>万亿</span></strong><p>2024 年同比增长 5.5%</p><a href="https://www.miit.gov.cn/jgsj/yxj/xxfb/art/2025/art_49031440236d4650823b131173a1794d.html" target="_blank" rel="noopener">工业和信息化部 ↗</a></article>
+        <article class="metric-card"><span class="metric-label">在用算力中心机架</span><strong>880<span>万+</span></strong><p>2024 年全国标准机架数</p><a href="https://www.miit.gov.cn/jgsj/yxj/xxfb/art/2025/art_49031440236d4650823b131173a1794d.html" target="_blank" rel="noopener">基础设施数据 ↗</a></article>
+      </div>
+      <div class="chart-grid chart-grid-foundation">
+        <article class="chart-card chart-card-wide"><div class="chart-head"><div><span class="chart-index">A</span><h3>人工智能核心产业规模</h3></div><span class="chart-meta">亿元 / 2020—2024</span></div><p class="chart-note">从芯片、算力、模型到应用，产业规模持续扩张。2024 年为公开报告中的约值。</p><div class="chart" id="aiScaleChart"></div><a class="source-link" href="https://www.nda.gov.cn/sjj/zhuanti/sjzgzxd/szzgbg/0605/ff808081-96b465bf-0197-3dd5a76f-05c7.pdf" target="_blank" rel="noopener">来源：国家数据局《数字中国发展报告（2024）》图 8 ↗</a></article>
+        <article class="chart-card"><div class="chart-head"><div><span class="chart-index">B</span><h3>数字经济核心产业结构</h3></div><span class="chart-meta">2024 / %</span></div><p class="chart-note">数字技术应用业占比最高，说明技术正在从基础设施走向具体应用。</p><div class="chart chart-donut" id="structureChart"></div><a class="source-link" href="https://www.stats.gov.cn/sj/zxfb/202512/t20251230_1962177.html" target="_blank" rel="noopener">来源：国家统计局 ↗</a></article>
+      </div>
+    </section>
+
+    <section class="section section-dark reveal-section" id="diffusion" data-section="diffusion">
+      <div class="section-head section-head-light"><div><p class="section-kicker">02 / DIFFUSION</p><h2>再看 AI 如何扩散</h2></div><p class="section-intro">当用户、企业和基础设施同时增长，AI 才真正从实验室进入生产现场。</p></div>
+      <div class="dark-metrics"><div><strong>2.3<span>亿</span></strong><small>生成式 AI 用户<br>截至 2024 年 6 月</small></div><div><strong>16.4<span>%</span></strong><small>公众生成式 AI<br>使用普及率</small></div><div><strong>4,500<span>+</span></strong><small>相关 AI 企业<br>截至 2024 年</small></div><div><strong>425.1<span>万</span></strong><small>5G 基站<br>截至 2024 年末</small></div></div>
+      <div class="chart-grid chart-grid-diffusion">
+        <article class="chart-card chart-card-dark"><div class="chart-head"><div><span class="chart-index">C</span><h3>全球组织 AI 使用率</h3></div><span class="chart-meta">调查样本 / %</span></div><p class="chart-note">这组数据描述组织采用情况，与公众用户普及率属于不同统计口径。</p><div class="chart chart-dark" id="adoptionChart"></div><a class="source-link" href="https://hai.stanford.edu/ai-index/2025-ai-index-report/economy" target="_blank" rel="noopener">来源：Stanford HAI AI Index 2025 ↗</a></article>
+        <article class="chart-card chart-card-dark"><div class="chart-head"><div><span class="chart-index">D</span><h3>中国数字产业区域增长</h3></div><span class="chart-meta">2024 / 同比 %</span></div><p class="chart-note">东部地区占全国数字产业收入 73.6%，区域增长速度也保持领先。</p><div class="chart chart-dark" id="regionalChart"></div><a class="source-link" href="https://www.miit.gov.cn/jgsj/yxj/xxfb/art/2025/art_49031440236d4650823b131173a1794d.html" target="_blank" rel="noopener">来源：工业和信息化部 ↗</a></article>
+      </div>
+      <div class="reach-panel"><div class="reach-copy"><span class="panel-kicker">A MOMENT OF SCALE</span><h3>从“有人使用”到“企业采用”</h3><p>公众使用率和组织采用率分别回答两个问题：AI 是否进入日常生活，以及 AI 是否进入业务流程。</p></div><div class="reach-bars"><div class="reach-row"><span>中国公众生成式 AI 普及率</span><div><i style="width:16.4%"></i></div><b>16.4%</b></div><div class="reach-row"><span>全球组织使用 AI（2024）</span><div><i style="width:78%"></i></div><b>78%</b></div><div class="reach-row"><span>全球组织使用生成式 AI（2024）</span><div><i style="width:71%"></i></div><b>71%</b></div></div></div>
+    </section>
+
+    <section class="section reveal-section" id="outcomes" data-section="outcomes">
+      <div class="section-head"><div><p class="section-kicker">03 / OUTCOMES</p><h2>最后看结果</h2></div><p class="section-intro">生产力的变化，需要落到产量、设备、流程和劳动效率这些可观察结果上。</p></div>
+      <div class="outcome-layout">
+        <article class="chart-card chart-card-robot"><div class="chart-head"><div><span class="chart-index">E</span><h3>工业机器人密度</h3></div><span class="chart-meta">台 / 每万名制造业员工</span></div><p class="chart-note">机器人密度是观察制造业自动化程度的一个窗口。中国 2024 年位列全球前列。</p><div class="chart" id="robotChart"></div><div class="inline-callout"><strong>55.6 万套</strong><span>国家统计局公布的 2024 年工业机器人产量，同比增长 14.2%。</span></div><a class="source-link" href="https://ifr.org/post/automation-is-a-cornerstone-of-modern-manufacturing" target="_blank" rel="noopener">来源：IFR World Robotics ↗</a></article>
+        <div class="evidence-column"><div class="evidence-heading"><span class="panel-kicker">FIELD EVIDENCE</span><h3>效率开始被量化</h3></div><article class="evidence-card"><span class="evidence-tag">现场研究 / 客服</span><strong>+14<span>%</span></strong><p>生成式 AI 助手让每小时解决问题数平均提升约 14%；新手和低技能人员提升约 35%。</p><a href="https://www.nber.org/digest/20236/measuring-productivity-impact-generative-ai" target="_blank" rel="noopener">NBER 研究 ↗</a></article><article class="evidence-card evidence-card-teal"><span class="evidence-tag">产业案例 / 视觉质检</span><strong>−60<span>%</span></strong><p>中国信通院报告中的企业案例显示，AI 视觉检测让生产周期缩短约 60%，准确率超过 90%。</p><a href="https://www.caict.ac.cn/kxyj/qwfb/bps/202412/P020241210548865982463.pdf" target="_blank" rel="noopener">中国信通院报告 ↗</a></article></div>
+      </div>
+    </section>
+
+    <section class="section section-soft reveal-section" id="simulator" data-section="simulator">
+      <div class="section-head"><div><p class="section-kicker">04 / SCENARIO LAB</p><h2>试着推演一次</h2></div><p class="section-intro">拖动采用率，看看同一套生产力假设在不同场景中会产生怎样的变化。</p></div>
+      <div class="simulator"><div class="sim-controls"><div class="control-block"><label for="sectorSelect">选择场景</label><select id="sectorSelect"><option value="service">客服与服务</option><option value="manufacturing">制造与质检</option><option value="logistics">物流与供应链</option><option value="research">研发与设计</option></select></div><div class="control-block"><div class="control-label"><label for="adoptionSlider">AI 采用率</label><output id="adoptionValue">50%</output></div><input id="adoptionSlider" type="range" min="0" max="100" step="5" value="50"><div class="range-scale"><span>0</span><span>试点</span><span>全面协同</span><span>100%</span></div></div><div class="assumption"><span class="assumption-dot"></span><p><b>情景模型</b><br>采用率 × 场景增益 = 估算效率提升。参数来自公开研究和行业案例，用于展示方法，不代表行业平均。</p></div></div><div class="sim-output"><div class="sim-summary"><span id="simSectorLabel">客服与服务</span><strong id="simGain">+7.0%</strong><small id="simDescription">以现场研究中的客服效率提升为参考</small></div><div class="chart sim-chart" id="simulatorChart"></div><div class="sim-foot"><span>基准生产力 = 100</span><span>估算结果会随采用率变化</span></div></div></div>
+    </section>
+
+    <section class="section sources-section reveal-section" id="sources" data-section="sources">
+      <div class="section-head"><div><p class="section-kicker">DATA NOTES</p><h2>数据从哪里来</h2></div><p class="section-intro">所有数值保留年份、单位和口径；“约”“超过”沿用原始来源的表述。</p></div>
+      <div class="source-grid"><a class="source-tile" href="https://www.stats.gov.cn/sj/zxfb/202512/t20251230_1962177.html" target="_blank" rel="noopener"><span>01</span><strong>国家统计局</strong><small>数字经济核心产业、研发经费、工业机器人产量</small><b>↗</b></a><a class="source-tile" href="https://www.miit.gov.cn/jgsj/yxj/xxfb/art/2025/art_49031440236d4650823b131173a1794d.html" target="_blank" rel="noopener"><span>02</span><strong>工业和信息化部</strong><small>数字产业收入、区域增长、5G 与算力基础设施</small><b>↗</b></a><a class="source-tile" href="https://www3.cnnic.cn/n4/2024/1216/c88-11196.html" target="_blank" rel="noopener"><span>03</span><strong>CNNIC</strong><small>生成式 AI 用户、企业和大模型备案情况</small><b>↗</b></a><a class="source-tile" href="https://hai.stanford.edu/ai-index/2025-ai-index-report/economy" target="_blank" rel="noopener"><span>04</span><strong>Stanford HAI</strong><small>全球 AI 投资、组织采用率和行业影响</small><b>↗</b></a><a class="source-tile" href="https://ifr.org/wr-industrial-robots/" target="_blank" rel="noopener"><span>05</span><strong>IFR World Robotics</strong><small>工业机器人安装量、存量与机器人密度</small><b>↗</b></a><a class="source-tile" href="https://www.nber.org/digest/20236/measuring-productivity-impact-generative-ai" target="_blank" rel="noopener"><span>06</span><strong>NBER</strong><small>生成式 AI 对客服劳动效率的现场研究</small><b>↗</b></a></div>
+      <p class="method-note"><b>口径说明：</b>公众使用率、组织采用率、机器人产量和机器人装机量分别来自不同统计体系，页面按模块分开展示。AI 核心产业规模序列中的 2024 年为公开报告中的约值。</p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>智能跃迁 · AI × 新质生产力</span><span>静态数据专题站 / GitHub Pages ready</span><a href="#top">返回顶部 ↑</a></footer>
+</body>
+</html>
+
